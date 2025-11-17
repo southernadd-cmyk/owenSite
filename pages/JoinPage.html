@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="referrer" content="origin" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Geostar+Fill&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+<style>
+
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+.geostar-fill-regular {
+  font-family: "Geostar Fill", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+.roboto-mono-regular {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  display: grid;
+  height: 600%;
+  width: 100%;
+  grid-template-columns: 0.1fr 1.2fr 2.4fr 0.2fr 2.4fr 1.2fr 0.1fr;
+  grid-template-rows: 1.2fr 0.4fr 2fr 0.4fr 5fr 0.4fr 2fr 0.4fr 5fr 0.4fr 10fr 0.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Home Home . . . Logo Logo"
+    ". . . . . . ."
+    ". VidLink1 VidLink1 . Job1 Job1 ."
+    ". VidLink1 VidLink1 . . . ."
+    ". VidLink1 VidLink1. Spec1 Spec1 ."
+    ". . . . . . ."
+    ". VidLink2 VidLink2 . Job2 Job2 ."
+    ". VidLink2 VidLink2 . . . ."
+    ". VidLink2 VidLink2 . Spec2 Spec2 ."
+    ". . . . . . ."
+    ". ApplicationForm ApplicationForm ApplicationForm ApplicationForm ApplicationForm ."
+    ". . . . . . ."
+}
+
+.Home {
+  grid-area: Home;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  box-shadow:0px 0px 0px 2px #00ffff inset;
+  font-family: "Black Ops One", serif;
+  font-size: 2em;
+  }
+
+.Logo {
+  grid-area: Logo;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  box-shadow:0px 0px 0px 2px #00ffff inset;
+  background-image: url("../images/Logo.jpeg");
+  background-size: 100% 80px;
+  }
+
+.VidLink1 { grid-area: VidLink1; }
+
+.VidLink2 { grid-area: VidLink2; }
+
+.Job1 {
+  grid-area: Job1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b5bfa1;
+  box-shadow:0px 0px 0px 2px #000000 inset;
+  font-family: "Black Ops One", serif;
+  font-size: 2.1em;
+}
+
+.Job2 {
+  grid-area: Job2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b5bfa1;
+  box-shadow:0px 0px 0px 2px #000000 inset;
+  font-family: "Black Ops One", serif;
+  font-size: 2.1em;
+}
+
+.Spec1 {
+  grid-area: Spec1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b5bfa1;
+  box-shadow:0px 0px 0px 2px #000000 inset;
+}
+
+.Spec2 {
+  grid-area: Spec2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b5bfa1;
+  box-shadow:0px 0px 0px 2px #000000 inset;
+}
+
+.ApplicationForm {
+  grid-area: ApplicationForm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b5bfa1;
+  box-shadow:0px 0px 0px 2px #000000 inset;
+}
+
+.ColourBackground {
+  background-color: #423e57;​
+}
+
+
+</style>
+
+</head>
+
+<body class="ColourBackground">
+
+<div class="container">
+  <div class="Home">
+    <a style=color:#ff00ff href=MainPage.html> Home </a>
+  </div>
+  <div class="Logo"></div>
+  <div class="VidLink1"> <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/HGTJBPNC-Gw?si=tZPihSEkhdEFAO4i&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe> </div>
+  <div class="Job1">
+    <h2> Junior Web Programmer </h2>
+  </div>
+  <div class="Spec1"> <h2 class=black-ops-one-regular> Specification </h2> <p style="padding-right: 6px; padding-left: 6px" class=roboto-mono-regular>
+<b> As our Junior Web Developer you will be responsible for: </b> <br>
+    - Developing websites using HTML and JavaScript code <br>
+    - Identifying &amp fixing small and medium sized bugs <br>
+    - Adding features to existing code in our web application <br>
+    - Working as part of the team on development projects <br>
+<br>
+<b> Required Qualifications and Experience: </b> <br>
+    - University degree in computer science, IT, equivalent experience or demonstrable interest in coding <br>
+    - 1-3 years' experience with HTML (at least intermediate level) and MySQL databases (at least intermediate level) <br>
+    - Knowledge of core web technologies, including HTML, CSS and JavaScript. <br>
+    - Ability to write, read and interpret existing HTML code to understand the function and be able to debug the code <br>
+    - Fluent in English <br>
+  </p>
+  </div>
+  <div class="VidLink2"> 
+  
+<meta name="referrer" content="strict-origin-when-cross-origin"> 
+<iframe referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" src="https://www.youtube.com/embed/nu_pCVPKzTk?si=XTDCAc3aep5Z_EIZ?origin=youtube.com" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ 
+<iframe style="margin-top:0;" width="640" height="360" src="https://www.youtube-nocookie.com/embed/nu_pCVPKzTk?origin=youtube.com" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+ </div>
+  
+  <div class="Job2">
+    <h2> Senior Web Programmer </h2>
+  </div>
+  <div class="Spec2"> <h2 class=black-ops-one-regular> Specification </h2> <p style="padding-right: 6px; padding-left: 6px" class=roboto-mono-regular>
+<b> As our Senior Web Developer you will: </b> <br>
+    - Exemplify strong ownership and accountability <br>
+    - Be a pragmatic problem-solver able to balance speed and technical debt <br>
+    - Demonstrate excellent collaboration and communication with Product &amp Design teams <br>
+    - Be curious and proactive about new technologies; eager to mentor others <br>
+    - Have a strategic mindset focused on scalability, maintainability, and performance <br>
+<br>
+<b> Required Qualifications and Experience: </b> <br>
+    - 5+ years of experience building scalable websites <br>
+    - Strong mastery of JavaScript / TypeScript, React, and Node.js <br>
+    - Solid understanding of REST and GraphQL APIs, webhooks, and authentication <br>
+    - Experience with CI/CD principles, Git, and testing practices (unit/integration) <br>
+    - Experience working in Agile environments (Scrum/Kanban) <br>
+    - Fluent in English <br>
+  </p>
+  </div>
+  <div class="ApplicationForm"> <iframe width="100%" height="100%" src="https://forms.cloud.microsoft/e/7rxt1PmHYW?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe> </div>
+</div>
+
+</div>
+
+</body>
+
+</html>

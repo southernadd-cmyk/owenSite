@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Geostar+Fill&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+<style>
+
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+.geostar-fill-regular {
+  font-family: "Geostar Fill", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+.roboto-mono-regular {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.container {
+  display: grid;
+  height: 600%;
+  width: 100%;
+  grid-template-columns: 0.1fr 1.2fr 2.4fr 0.2fr 2.4fr 1.2fr 0.1fr;
+  grid-template-rows: 1.2fr 0.4fr 2fr 0.4fr 5fr 0.4fr 4fr 0.4fr 4fr 0.4fr 4fr 0.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Home Home . . . Logo Logo"
+    ". . . . . . ."
+    ". Photo Photo . Name Name ."
+    ". Photo Photo . . . ."
+    ". Photo Photo . AboutMe AboutMe ."
+    ". . . . . . ."
+    ". MyRole MyRole MyRole MyRole MyRole ."
+    ". . . . . . ."
+    ". MySkills MySkills MySkills MySkills MySkills ."
+    ". . . . . . ."
+    ". MyExperience MyExperience MyExperience MyExperience MyExperience ."
+    ". . . . . . ."
+}
+
+.Home {
+  grid-area: Home;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  box-shadow:0px 0px 0px 2px #00ffff inset;
+  font-family: "Black Ops One", serif;
+  font-size: 2em;
+  }
+
+.Logo {
+  grid-area: Logo;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  box-shadow:0px 0px 0px 2px #00ffff inset;
+  background-image: url("../images/Logo.jpeg");
+  background-size: 100% 80px;
+  }
+
+.Photo { grid-area: Photo; }
+
+.Name {
+  grid-area: Name;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b5bfa1;
+  box-shadow:0px 0px 0px 2px #000000 inset;
+  font-family: "Black Ops One", serif;
+  font-size: 2.1em;
+}
+
+.AboutMe {
+  grid-area: AboutMe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b5bfa1;
+  box-shadow:0px 0px 0px 2px #000000 inset;
+}
+
+.MyRole {
+  grid-area: MyRole;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b5bfa1;
+  box-shadow:0px 0px 0px 2px #000000 inset;
+}
+
+.MySkills {
+  grid-area: MySkills;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b5bfa1;
+  box-shadow:0px 0px 0px 2px #000000 inset;
+}
+
+.MyExperience {
+  grid-area: MyExperience;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b5bfa1;
+  box-shadow:0px 0px 0px 2px #000000 inset;
+}
+
+.ColourBackground {
+  background-color: #423e57;​
+}
+
+
+</style>
+
+</head>
+
+<body class="ColourBackground">
+
+<div class="container">
+  <div class="Home">
+    <a style=color:#ff00ff href=MainPage.html> Home </a>
+  </div>
+  <div class="Logo"></div>
+  <div class="Photo"> <img src="../images/Expert1.jpeg" width=100% height=100%> </div>
+  <div class="Name">
+    <h1 class="black-ops-one"> Name </h1>
+  </div>
+  <div class="MyRole roboto-mono-regular">
+    <h2 class=geostar-fill-regular> My Role </h2>
+    <p style="padding-top: 2px; padding-right: 6px; padding-left: 6px; padding-bottom: 2px"> </p>
+  </div>
+  <div class="AboutMe roboto-mono-regular">
+    <h2 class=geostar-fill-regular> About Me </h2>
+    <p style="padding-top: 2px; padding-right: 6px; padding-left: 6px; padding-bottom: 2px; font-size: 1.7em"> text </p>
+  </div>
+  <div class="MySkills roboto-mono-regular">
+    <h2 class=geostar-fill-regular> My Skills </h2>
+    <p style="padding-top: 2px; padding-right: 6px; padding-left: 6px; padding-bottom: 2px"> </p>
+  </div>
+  <div class="MyExperience">
+    <h2 class=geostar-fill-regular> My Exlperience </h2>
+    <p style="padding-top: 2px; padding-right: 6px; padding-left: 6px; padding-bottom: 2px"> </p>
+  </div>
+</div>
+
+</body>
+
+</html>

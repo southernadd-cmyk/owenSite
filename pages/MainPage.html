@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Geostar+Fill&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+<style>
+
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+.geostar-fill-regular {
+  font-family: "Geostar Fill", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+.roboto-mono-regular {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.container {
+  display: grid;
+  height: 600%;
+  width: 100%;
+  grid-template-columns: 0.1fr 1.2fr 0.1fr 1.2fr 1.2fr 1.2fr 1.2fr 0.1fr 1.2fr 0.1fr;
+  grid-template-rows: 0.2fr 0.8fr 0.2fr 10fr 0.6fr 7fr 0.6fr 1fr 0.6fr 5fr 0.6fr 1fr 0.6fr 5fr 0.6fr 1fr 0.6fr 5fr 0.2fr 10fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Home Home . . . . . . Logo Logo"
+    "Home Home . ContactLinks . . . . Logo Logo"
+    "Home Home . . . . . . Logo Logo"
+    "Banner Banner Banner Banner Banner Banner Banner Banner Banner Banner"
+    ". . . . . . . . . ."
+    ". . . AboutUs AboutUs AboutUs AboutUs . Anchors ."
+    ". . . . . . . . . ."
+    ". . . OurExperts OurExperts . . . . ."
+    ". . . . . . . . . ."
+    ". . . Link Link2 Link3 Link4 . . ."
+    ". . . . . . . . . ."
+    ". . . OurCoders OurCoders . . . . ."
+    ". . . . . . . . . ."
+    ". . . Link5 Link6 Link7 Link8 . . ."
+    ". . . . . . . . . ."
+    ". . . OurTrainees OurTrainees . . . . ."
+    ". . . . . . . . . ."
+    ". . . Link9 Link10 Link11 Link12 . . ."
+    ". . . . . . . . . ."
+    "JoinUs JoinUs JoinUs JoinUs JoinUs JoinUs JoinUs JoinUs JoinUs JoinUs";
+}
+
+.Home {
+  grid-area: Home;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  box-shadow:0px 0px 0px 2px #00ffff inset;
+  font-family: "Black Ops One", serif;
+  font-size: 2em;
+  }
+
+.Logo {
+  grid-area: Logo;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  box-shadow:0px 0px 0px 2px #00ffff inset;
+  background-image: url("../images/Logo.jpeg");
+  background-size: 100% 80px;
+  }
+
+.Banner {
+  display: grid;
+  background-image: url("../images/Banner.jpeg");
+  background-size: cover;
+  grid-template-columns: 1fr 0.6fr 1fr;
+  grid-template-rows: 0.6fr 0.2fr 0.4fr 1.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". BannerText ."
+    ". . .";
+  grid-area: Banner;
+}
+
+.BannerText {
+  grid-area: BannerText;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ContactLinks {
+  grid-area: ContactLinks;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ff00ff;
+  box-shadow:0px 0px 0px 3px #000000 inset;
+  }
+
+.AboutUs {
+  grid-area: AboutUs;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b5bfa1;
+  box-shadow:0px 0px 0px 2px #000000 inset;
+  }
+
+.Anchors {
+  grid-area: Anchors;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000000;
+  box-shadow:0px 0px 0px 2px #00ffff inset;
+  font-size: 1.5em;
+  }
+
+.OurExperts {
+  grid-area: OurExperts;
+  font-size: 1em;
+  }
+
+.Link {
+  grid-area: Link;
+  box-shadow:0px 0px 0px 2px #b5bfa1 inset;
+  }
+
+.Link2 {
+  grid-area: Link2;
+  box-shadow:0px 0px 0px 2px #b5bfa1 inset;
+  }
+
+.Link3 {
+  grid-area: Link3;
+  box-shadow:0px 0px 0px 2px #b5bfa1 inset;
+  }
+
+.Link4 {
+  grid-area: Link4;
+  box-shadow:0px 0px 0px 2px #b5bfa1 inset;
+  }
+
+.OurCoders {
+  grid-area: OurCoders;
+  font-size: 1em;
+  }
+
+.Link5 {
+  grid-area: Link5;
+  box-shadow:0px 0px 0px 2px #b5bfa1 inset;
+  }
+
+.Link6 {
+  grid-area: Link6;
+  box-shadow:0px 0px 0px 2px #b5bfa1 inset;
+  }
+
+.Link7 {
+  grid-area: Link7;
+  box-shadow:0px 0px 0px 2px #b5bfa1 inset;
+  }
+
+.Link8 {
+  grid-area: Link8;
+  box-shadow:0px 0px 0px 2px #b5bfa1 inset;
+  }
+
+.OurTrainees {
+  grid-area: OurTrainees;
+  }
+
+.Link9 {
+  grid-area: Link9;
+  box-shadow:0px 0px 0px 2px #b5bfa1 inset;
+  }
+
+.Link10 {
+  grid-area: Link10;
+  box-shadow:0px 0px 0px 2px #b5bfa1 inset;
+  }
+
+.Link11 {
+  grid-area: Link11;
+  box-shadow:0px 0px 0px 2px #b5bfa1 inset;
+  }
+
+.Link12 {
+  grid-area: Link12;
+  box-shadow:0px 0px 0px 2px #b5bfa1 inset;
+  }
+
+.JoinUs {
+  display: grid;
+  background-image: url("../images/JoinBanner.jpeg");
+  background-size: cover;
+  grid-template-columns: 1fr 0.6fr 1fr;
+  grid-template-rows: 0.6fr 0.2fr 0.4fr 1.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". JoinText ."
+    ". JoinLink ."
+    ". . .";
+  grid-area: JoinUs;
+}
+
+.JoinLink {
+  grid-area: JoinLink;
+  background-color: #000000;
+  box-shadow:0px 0px 0px 2px #ff00ff inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas:
+  "button"
+  }
+
+.JoinText {
+  grid-area: JoinText;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff00ff;
+  font-size: 2em;
+  }
+
+.ColourBackground {
+  background-color: #423e57;​
+  }
+
+.button {
+   grid-area: JoinLink;
+   box-shadow:0px 0px 0px 2px #ff00ff inset;
+   background: #00ffff;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ff00ff), to(#00ffff));
+   background: -webkit-linear-gradient(top, #ff00ff, #00ffff);
+   background: -moz-linear-gradient(top, #ff00ff, #00ffff);
+   background: -ms-linear-gradient(top, #ff00ff, #00ffff);
+   background: -o-linear-gradient(top, #ff00ff, #00ffff);
+   height: 100%;
+   width: 100%;
+   color: #000000;
+   font-size: 24px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   }
+.button:hover {
+   border-top-color: #000000;
+   background: #000000;
+   color: #ff00ff;
+   }
+.button:active {
+   border-top-color: #00ffff;
+   background: #00ffff;
+}
+
+.Expert1 {
+  background-image: url("../images/Expert1.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #000000;
+}
+
+.Coder1 {
+  background-image: url("../images/Coder1.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #000000;
+}
+
+.Trainee1 {
+  background-image: url("../images/Trainee1.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #000000;
+}
+
+
+</style>
+
+</head>
+
+
+
+<body class= "ColourBackground">
+
+
+<div class="container">
+  <div class="Home">
+	<a style=color:#ff00ff href=MainPage.html> Home </a>
+  </div>
+  <div class="Logo"></div>
+  <div class="Banner">
+    <div class="BannerText">
+      <h2 style="font-family: Black Ops One; font-size: 5em"> Exe Web </h2>
+    </div>
+  </div>
+  <div class="ContactLinks">
+  <img src="../images/insta.png" alt="instagram" height=34px width=34px>
+  <img src="../images/email.png" alt="email" height=34px width=48px>
+  <img src="../images/facebook.png" alt="facebook" height=34px width=34px>
+  </div>
+  <div class="AboutUs roboto-mono-regular">
+    <h1 class=geostar-fill-regular> About Us </h1>
+    <p style="padding-top: 2px; padding-right: 6px; padding-left: 6px; padding-bottom: 2px; font-size: 1.7em"> Welcome to Exe Web, an ambitous web development company in Devon. We tailor websites that are visually stunning, drive conversions, enhance visibility, and engage audiences across every digital channel.
+
+Creative Web development company supporting clients throughout the south west.
+
+Do you need a stunning online presence for your business? We can craft your ideas into seamless digital websites that market innovations and foster business growth. We have worked for 45+ business industries across the south west.
+
+Our expert developers are well-versed in integrating business ideas into engaging sites, free from bugs and performance issues. As a customer-focussed website design agency, we can help you create a unique brand presence and values focussed on the end-users experience. </p>
+  </div>
+  <div class="Anchors geostar-fill-regular">
+    <a style=color:#ff00ff href="#AnchorExperts" class="geostar-fill-regular"> Our Experts </a>
+    <p></p>
+    <a style=color:#ff00ff href="#AnchorCoders" class="geostar-fill-regular"> Our Coders </a>
+    <p></p>
+    <a style=color:#ff00ff href="#AnchorTrainees" class="geostar-fill-regular"> Our Trainees </a>
+    <p></p>
+    <a style=color:#ff00ff href="#AnchorJoin" class="geostar-fill-regular"> Join Us </a>
+  </div>
+  <div class="OurExperts">
+    <h2 id="AnchorExperts" style="font-family: Geostar Fill"> Our Experts </h2>
+  </div>
+  <div class="Link Expert1"> <a style=color:#ff00ff href=Expert1.html> <img src="../images/empty.png" width=100% height=100%> </a> </div>
+  <div class="Link2"> <a style=color:#ff00ff href="JoinPage.html"> <img src="../images/AvailablePos.jpeg" width=100% height=100%> </a> </div>
+  <div class="Link3"> <a style=color:#ff00ff href="JoinPage.html"> <img src="../images/AvailablePos.jpeg" width=100% height=100%> </a> </div>
+  <div class="Link4"> <a style=color:#ff00ff href="JoinPage.html"> <img src="../images/AvailablePos.jpeg" width=100% height=100%> </a> </a> </div>
+  <div class="OurCoders">
+    <h2 id="AnchorCoders" style="font-family: Geostar Fill"> Our Coders </h2>
+  </div>
+  <div class="Link5 Coder1"> <a style=color:#ff00ff href=Coder1.html> <img src="../images/empty.png" width=100% height=100%> </a> </div>
+  <div class="Link6"> <a style=color:#ff00ff href="JoinPage.html"> <img src="../images/AvailablePos.jpeg" width=100% height=100%> </a> </div>
+  <div class="Link7"> <a style=color:#ff00ff href="JoinPage.html"> <img src="../images/AvailablePos.jpeg" width=100% height=100%> </a> </div>
+  <div class="Link8"> <a style=color:#ff00ff href="JoinPage.html"> <img src="../images/AvailablePos.jpeg" width=100% height=100%> </a> </div>
+  <div class="OurTrainees">
+    <h2 id="AnchorTrainees" style="font-family: Geostar Fill"> Our Trainees </h2>
+  </div>
+  <div class="Link9 Trainee1"> <a style=color:#ff00ff href=Trainee1.html> <img src="../images/empty.png" width=100% height=100%> </a> </div>
+  <div class="Link10"> <a style=color:#ff00ff href="JoinPage.html"> <img src="../images/AvailablePos.jpeg" width=100% height=100%> </a> </div>
+  <div class="Link11"> <a style=color:#ff00ff href="JoinPage.html"> <img src="../images/AvailablePos.jpeg" width=100% height=100%> </a> </div>
+  <div class="Link12"> <a style=color:#ff00ff href="JoinPage.html"> <img src="../images/AvailablePos.jpeg" width=100% height=100%> </a> </div>
+  <div class="JoinUs" id="AnchorJoin">
+    <div class="JoinLink">
+      <a class="button" href="JoinPage.html"> Apply Now </a>
+    </div>
+    <div class="JoinText">
+      <h2 style="font-family: Geostar Fill; outline: 2px solid #ff00ff; background-color: #000000; padding-top: 2px; padding-right: 6px; padding-left: 6px; padding-bottom: 2px"> Join Us </h2>
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+</html>
